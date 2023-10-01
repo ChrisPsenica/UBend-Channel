@@ -90,7 +90,7 @@ daOptionsAero = {
                 "varName": "T",
                 "varType": "scalar",
                 "component": 0,
-                "scale": -1.0,
+                "scale": 1.0,
                 "addToAdjoint": True,
             },
         },
@@ -277,7 +277,7 @@ class Top(Multipoint):
         self.add_design_var("shapexouter2" ,lower=-0.05, upper=0.05, scaler = 20.0)
 
         # add objective and constraints
-        self.add_objective("scenario.aero_post.TMEAN", scaler = 1.0)
+        self.add_objective("scenario.aero_post.TMEAN", scaler = -1.0)
         self.add_constraint("scenario.aero_post.PL", upper = 55 , scaler=1.0)
         self.add_constraint("scenario.aero_post.skewness", lower=0., upper=6.0, scaler = 1.0)
         self.add_constraint("scenario.aero_post.nonOrtho", lower=0, upper=80.0, scaler = 1.0)
