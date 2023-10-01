@@ -77,7 +77,7 @@ daOptionsAero = {
                 "type": "wallHeatFlux",
                 "source": "patchToFace",
                 "patches": ["ubend"],
-                "scale": -1.0,
+                "scale": 1.0,
                 "addToAdjoint": True,
             },
         },
