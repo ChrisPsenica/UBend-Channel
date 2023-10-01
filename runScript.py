@@ -90,7 +90,7 @@ daOptionsAero = {
                 "varName": "T",
                 "varType": "scalar",
                 "component": 0,
-                "scale": 1.0,
+                "scale": -1.0,
                 "addToAdjoint": True,
             },
         },
