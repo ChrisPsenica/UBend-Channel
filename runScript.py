@@ -269,12 +269,12 @@ class Top(Multipoint):
 
         
         # define the design variables to the top level
-        self.add_design_var("shapez" ,lower=-0.06, upper = 0.06, scaler = 16.6667)
-        self.add_design_var("shapeyouter" ,lower=-0.04, upper=0.04, scaler = 25.0)
-        self.add_design_var("shapeyinner" ,lower=-0.06, upper=0.06, scaler = 16.6667)
-        self.add_design_var("shapexinner" ,lower=-0.06, upper=0.06, scaler = 16.6667)
-        self.add_design_var("shapexouter1" ,lower=-0.07, upper=0.07, scaler = 14.29)
-        self.add_design_var("shapexouter2" ,lower=-0.07, upper=0.07, scaler = 14.29)
+        self.add_design_var("shapez" ,lower=-0.04, upper = 0.04, scaler = 25.0)
+        self.add_design_var("shapeyouter" ,lower=-0.02, upper=0.02, scaler = 50.0)
+        self.add_design_var("shapeyinner" ,lower=-0.04, upper=0.04, scaler = 25.0)
+        self.add_design_var("shapexinner" ,lower=-0.04, upper=0.04, scaler = 25.0)
+        self.add_design_var("shapexouter1" ,lower=-0.05, upper=0.05, scaler = 20.0)
+        self.add_design_var("shapexouter2" ,lower=-0.05, upper=0.05, scaler = 20.0)
 
         # add objective and constraints
         self.add_objective("scenario.aero_post.TMEAN", scaler = -1.0)
